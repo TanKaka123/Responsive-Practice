@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body style="background-color: yellow;">
-    <div class="" style="display:flex; align-items: stretch; justify-content: center; margin: 50px; padding: 100px;">
-        
-            <div class="pc">PC</div>
-            <div class="mobile">Mobile</div>
-            <div class="ipad">Ipad</div>
-      
-    </div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css" class="">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="nav">
+                <label for="mobile_input" class="nav_mobile-btn">
+                    <svg width="61" height="31" viewBox="0 0 61 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="3" fill="white"/>
+                        <rect y="14" width="40" height="3" fill="white"/>
+                        <rect y="28" width="40" height="3" fill="white"/>
+                        </svg>
+                </label>
+                <!-- Nav PC -->
+                <nav class="nav__pc">
+                    <ul class="nav__list">
+                        <li >
+                            <a href="" class="nav__link">Home</a>
+                        </li>
+                        <li >
+                            <a href="" class="nav__link">About</a>
+                        </li>
+                        <li >
+                            <a href="" class="nav__link">Category</a>
+                        </li>
+                        <li >
+                            <a href="" class="nav__link">News</a>
+                        </li>
+                        <li">
+                            <a href="" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <input type="checkbox" id="mobile_input" class="mobile_input" style="display:none">
+            <label for="mobile_input" class="overlay"></label>
+            <div class="nav_mobile">
+                <ul class="nav__mobile_list">
+                    <li class="content_nav" >
+                        <a href="" class="nav__mobile_link" >Home</a>
+                    </li>
+                    <li  class="content_nav">
+                        <a href="" class="nav__mobile_link">About</a>
+                    </li>
+                    <li  class="content_nav">
+                        <a href="" class="nav__mobile_link">Category</a>
+                    </li>
+                    <li  class="content_nav">
+                        <a href="" class="nav__mobile_link">News</a>
+                    </li>
+                    <li  class="content_nav">
+                        <a href="" class="nav__mobile_link">Contact</a>
+                    </li>
+                </ul>
+                <label for="mobile_input" class="nav_mobile-close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7909 10L19.4767 4.3142C20.1744 3.61648 20.1744 2.48523 19.4767 1.78693L18.2131 0.523295C17.5153 -0.174432 16.3841 -0.174432 15.6858 0.523295L10 6.20909L4.3142 0.523295C3.61648 -0.174432 2.48523 -0.174432 1.78693 0.523295L0.523295 1.78693C-0.174432 2.48466 -0.174432 3.61591 0.523295 4.3142L6.20909 10L0.523295 15.6858C-0.174432 16.3835 -0.174432 17.5148 0.523295 18.2131L1.78693 19.4767C2.48466 20.1744 3.61648 20.1744 4.3142 19.4767L10 13.7909L15.6858 19.4767C16.3835 20.1744 17.5153 20.1744 18.2131 19.4767L19.4767 18.2131C20.1744 17.5153 20.1744 16.3841 19.4767 15.6858L13.7909 10Z" fill="#A8A1A1"/>
+                    </svg>
+                    </label>
+            </div>
+            <article>
+                <h1>Hơn 100 học sinh biết bơi nhờ lớp dạy bơi miễn phí của những thanh niên tốt bụng</h1>
+                <p><strong>Hai năm nay, hai thanh niên ở xã Chư Đăng Ya, huyện Chư Pah (Gia Lai) cùng với một số thanh niên khác của xã đã tự nguyện dạy bơi cho những học sinh bản địa. Nhờ có lớp học bơi này, hơn 100 học sinh ở xã đã biết bơi, có thêm kỹ năng sinh tồn ở vùng đất thường có nước dữ vào mùa mưa.</strong></p>
+                <p>Câu chuyện về hành động đẹp của chị Lê Thị Mai (33 tuổi, người phụ nữ bán vé số tại TP.Đồng Xoài, Bình Phước) nhặt được số tiền hơn 100 triệu đồng cùng nhiều lắc, vòng, dây chuyền bằng vàng và trả lại cho người đánh rơi vào chiều ngày 28.10.2019 vẫn đang được nhiều người nhắc đến như một hành động đẹp, một bông hoa việc tốt giữa đời thường.</p>
+                <img src="https://www.thanhxuan.gov.vn/portal/khuongdinh/Photos/2015-09/2d3d8ef817831f3dT%E1%BA%B7ng%20qu%C3%A0%20cho%20tr%E1%BA%BB%20em%20Thu%20L%C5%A9m-%20Lai%20Ch%C3%A2u.JPG" alt="">
+                <p>Câu chuyện về hành động đẹp của chị Lê Thị Mai (33 tuổi, người phụ nữ bán vé số tại TP.Đồng Xoài, Bình Phước) nhặt được số tiền hơn 100 triệu đồng cùng nhiều lắc, vòng, dây chuyền bằng vàng và trả lại cho người đánh rơi vào chiều ngày 28.10.2019 vẫn đang được nhiều người nhắc đến như một hành động đẹp, một bông hoa việc tốt giữa đời thường.</p>
+                <img src="https://tttd.ex-cdn.com/files/f2/documents/10184/5227700/IMG_5661.jpg" alt="">
+                <p>Câu chuyện về hành động đẹp của chị Lê Thị Mai (33 tuổi, người phụ nữ bán vé số tại TP.Đồng Xoài, Bình Phước) nhặt được số tiền hơn 100 triệu đồng cùng nhiều lắc, vòng, dây chuyền bằng vàng và trả lại cho người đánh rơi vào chiều ngày 28.10.2019 vẫn đang được nhiều người nhắc đến như một hành động đẹp, một bông hoa việc tốt giữa đời thường.</p>
+                <img src="http://danvan.vn/Uploads/2017/9/15/quangyen040917.jpg" alt="">
+                <p>Câu chuyện về hành động đẹp của chị Lê Thị Mai (33 tuổi, người phụ nữ bán vé số tại TP.Đồng Xoài, Bình Phước) nhặt được số tiền hơn 100 triệu đồng cùng nhiều lắc, vòng, dây chuyền bằng vàng và trả lại cho người đánh rơi vào chiều ngày 28.10.2019 vẫn đang được nhiều người nhắc đến như một hành động đẹp, một bông hoa việc tốt giữa đời thường.</p>
+            </article>
+        </div>
+    </body>
 </html>

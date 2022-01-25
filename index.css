@@ -1,26 +1,109 @@
-.pc,
-.mobile,
-.ipad {
-    color: white;
-    font-size: 100px;
-    font-weight: 600;
-    display: none;
+* {
+    box-sizing: border-box;
 }
-@media only screen and (min-width:1024px)
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+/* Article */
+h1 {
+    line-height: 2rem;
+}
+
+article {
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img {
+    width: 640px;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+.overlay{
+    position : fixed;
+    top:0;
+    left : 0;
+    right :0;
+    bottom : 0 ;
+    background-color : rgba(0,0,0,0.3);
+    display : none;
+}
+.nav_mobile-btn{
+    margin-left : 10px;
+    display : none;
+}
+@media (max-width:63.9375em)
 {
-    .pc{
-        display: block;
+    .nav_mobile-btn{
+        display : block;
+    }
+    .nav__pc{
+        display  : none;
     }
 }
-@media only screen and (min-width:740px) and (max-width:1023px)
-{
-    .ipad{
-        display: block;
-    }
+.nav_mobile{
+    position : fixed ;
+    height : 100%;
+    width : 100%;
+    background-color: white;
+    left : 0;
+    transform : translateX(-100%);
+    text-align: center;
 }
-@media only screen and (max-width:739px)
+.nav__mobile_list{
+    margin-top:100px;
+    list-style-type : none;
+}
+.nav__mobile_link{
+    text-decoration : none;
+    color : black;
+    text-align: center;
+}
+.nav_mobile-close{
+    position : absolute ;
+   top:10px;
+   right :10px;
+}
+.content_nav{
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.mobile_input:checked ~.overlay
 {
-    .mobile{
-        display: block;
-    }
+    display : block;
+}
+.mobile_input:checked ~.nav_mobile
+{
+    transform : translateX(0%);
 }
